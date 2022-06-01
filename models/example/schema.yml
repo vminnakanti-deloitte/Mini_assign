@@ -1,0 +1,53 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: reputation
+    description: "Sql query for finding reputation"
+    columns:
+      - name: Id
+        description: "The Primary key for table"
+        tests:
+          - unique
+          - not_null
+  - name: Tags
+    description: "getting most badges"
+    columns:
+      - name: Id
+        description: "primary key"
+        tests:
+          - unique
+          - not_null
+  - name: questioncount
+    description: "getting no of questions asked"
+    columns:
+      - name: Id
+        description: "primary key"
+        tests:
+          - unique
+          - not_null
+  - name: queslike
+    description: "getting questions like asked by users"
+    columns:
+      - name: Id
+        description: "primary key"
+        tests:
+          - unique
+          - not_null
